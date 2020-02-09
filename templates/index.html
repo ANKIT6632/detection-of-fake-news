@@ -1,0 +1,49 @@
+<html>
+<head>
+	<title>my first app</title>
+	<style>
+body {
+  background-image: url('https://www.pixelstalk.net/wp-content/uploads/2015/12/Iron-man-hd-wallpaper.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+h1{
+	color:red;
+	text-align: center;
+	margin-top: 100px;
+	font-size: 40px;
+}
+input{
+	text-align: center;
+	margin-top:20px;
+	font-size:30px;
+	margin-left: 400px;
+	margin
+}
+button{
+	background-color:green;
+	font-size: 30px;
+	text-align: center;
+	margin-left: 520px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	size:60px;
+
+}
+</style>
+</head>
+
+<body>
+	<centre><h1>ENTER THE TEXT YOU WANT TO CHECK</h1></centre>
+	<form action="{{url_for('predict')}}" method="post">
+		<input type="text" placeholder="give the text to check" name="check1" required="required" />
+		<br>
+
+		<button type="submit" >predict </button>
+	</form>
+
+	<br>
+	<br>
+</body>
+</html>
